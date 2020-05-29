@@ -12,8 +12,8 @@ class Transaction():
         return User.getMemberId()
 
     #use this method to add items to list
-    def addTransactionItem(self, transactionId, Item, count):
-        self.transactionItemList.add(Item)
+    def addTransactionItem(self, Item):
+        transactionItemList.add(Item)
         """ count = self.count
         for i in count:
             self.transactionItemList.append(Item) """

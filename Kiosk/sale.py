@@ -31,11 +31,13 @@ def main():
     Kiosk.startTransaction(1)
 
 #add items to TransactionList
-    Transaction.addTransactionItem(1, item1, 1)
+    Transaction.addTransactionItem(item1)
         # Restricted=True-->?
-    Transaction.addTransactionItem(1, item2, 1)
-    Transaction.addTransactionItem(1, item3, 1)
-    Transaction.addTransactionItem(1, item4, 3)
+    Transaction.addTransactionItem(item2)
+    Transaction.addTransactionItem(item3)
+    Transaction.addTransactionItem(item4)
+    # I cann't get the items to add to the transactionItemList. I have tried
+    #  various versions of parameters, and nothing works.  I'm out of ideas.
 
 #do receipt/total calc
     saleTotal = Transaction.calcTotal()
