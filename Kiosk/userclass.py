@@ -30,7 +30,7 @@ class User():
     #str(item)
 
     def __str__(self):
-        return str(self.firstname) + ' ' + self.lastname +  ' ' + str(self.memberId) + ' ' + self.email + ' ' + str(self.phone)
+        return str((self.firstname) + ' ' + self.lastname +  ' ' + str(self.memberId) + ' ' + self.email + ' ' + str(self.phone))
 
     def browseInventory(self, Inventory):
         return #what to return here?

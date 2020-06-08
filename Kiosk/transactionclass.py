@@ -41,4 +41,4 @@ class Transaction():
     #str(item)
 
     def __str__(self):
-        return identifyUser(), self.transactionItemList
+        return User.getMemberId(), self.transactionItemList

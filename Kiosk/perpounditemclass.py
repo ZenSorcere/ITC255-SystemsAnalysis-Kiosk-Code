@@ -2,7 +2,7 @@ from itemclass import Item
 
 class PerPoundItem(Item):
     #constructor taking in initial values
-    def __init__(self, name, number, perpoundprice):
+    def __init__(self, name, number, perpoundprice, weight):
         self.name=name
         self.number=number
         self.perpoundprice=perpoundprice
@@ -30,4 +30,4 @@ class PerPoundItem(Item):
     #when the class is cast to string
     #str(item)
     def __str__(self):
-        return self.name + ' ' + str(self.number) +  ' ' + str(self.perpoundprice)
+        return self.name + ' ' + str(self.number) +  ' ' + str(self.perpoundprice) + '/lb.'
